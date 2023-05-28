@@ -82,5 +82,4 @@ test:
 production:
   <<: *default
   database: rails_chatgpt_production
-  username: rails_chatgpt
-  password: <%= ENV["RAILS_CHATGPT_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
