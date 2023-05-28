@@ -46,8 +46,13 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # ChatGPT
-gem "ruby-openai"
+gem "ruby-openai", "~> 4.0.0"
 
+# Simple, efficient background processing using Redis.
+# https://github.com/sidekiq/sidekiq
+gem "sidekiq", "~> 7.0.9"
+
+# manage env file
 gem "dotenv"
 # Use Sass to process CSS
 # gem "sassc-rails"
