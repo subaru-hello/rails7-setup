@@ -81,5 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: rails_chatgpt_production
   url: <%= ENV['DATABASE_URL'] %>
